@@ -11,3 +11,12 @@ let user_number = prompt("Choose a number between 1 and 5: ex:(write '1' '3' etc
 
 // Generate a random number for the computer function() ⬇️
 
+function generate_number_1to5() {
+  let pc_random_number = Math.floor(Math.random() * 5) + 1;
+  return pc_random_number
+}
+
+
+
+
+
