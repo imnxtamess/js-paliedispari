@@ -3,6 +3,18 @@
 
 // Ask the user for an input word
 
-prompt("Insert a word here to find out if it's a palindrome: ")
+const user_word = prompt("Insert a word here to find out if it's a palindrome: ")
 
 // isPalindrome function
+
+function isPalindrome(string) {
+  const stringToArray = string.split(""); // Turns the user input into an array of its letters
+  const reverseArray = split_string.reverse(); // reverses the letters of the array
+  const arrayToString = reverseArray.join(""); // turns the reversed array into a string 
+  if (arrayTostring === string) {
+    return isPalindrome = true
+  }
+  else {
+    return isPalindrome = false
+  }
+}
