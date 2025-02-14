@@ -8,15 +8,14 @@ const user_word = prompt("Insert a word here to find out if it's a palindrome: "
 // isPalindrome function
 
 function isPalindrome(string) {
-  const stringToArray = string.split(""); // Turns the user input into an array of its letters
-  const reverseArray = stringToArray.reverse(); // reverses the letters of the array
-  const arrayToString = reverseArray.join(""); // turns the reversed array into a string 
-  if (arrayToString === string) {
-    return isPalindrome = true
-  }
-  else {
-    return isPalindrome = false
-  }
+
+  let reversed_string = ""; // creates an empty string
+
+  for (let i = string.length - 1; i >= 0; i--) // starting from the position of the last letter of the string (string.length -1) add each letter to the var "reversed_string"
+    reversed_string += string[i]
+
+  if (reversed_string === string)
+    return true // returns the isPalindrome value to true if the reversed string is the same as the user_word
 }
 
 // Call the isPalindrome function
