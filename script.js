@@ -31,12 +31,22 @@ if (sum(generate_number_1to5(), user_number) % 2 === 0) {
   isEven = true
 }
 
-if (isEven) {
+if (isEven && user_choice === "even") {
   document.writeln("Congratulations you won the sum is Even")
 }
-else {
+else if (isEven && user_choice === "uneven") {
+  document.writeln("Better luck next time, you lost the sum is Even")
+}
+else if (isEven = false && user_choice === "even") {
   document.writeln("Better luck next time, you lost the sum is Uneven")
 }
+else if (isEven = false && user_choice === "uneven") {
+  document.writeln("Congratulations you won the sum is Uneven")
+}
+else if (user_choice != "even" && user_choice != "uneven") {
+  document.writeln("Invalid input refresh the page")
+}
+
 
 
 
