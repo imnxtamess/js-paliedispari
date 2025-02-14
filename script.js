@@ -23,8 +23,20 @@ function sum(pc_number, input_number) {
   return sum
 }
 
+// Win condition
 
+isEven = false
 
+if (sum(generate_number_1to5(), user_number) % 2 === 0) {
+  isEven = true
+}
+
+if (isEven) {
+  document.writeln("Congratulations you won the sum is Even")
+}
+else {
+  document.writeln("Better luck next time, you lost the sum is Uneven")
+}
 
 
 
